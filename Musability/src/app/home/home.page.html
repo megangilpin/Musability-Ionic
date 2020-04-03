@@ -1,0 +1,98 @@
+<!-- add in menu to slide out -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Musability</ion-title>
+    <ion-buttons slot="end">
+      <!-- sign in button / if signed in log out, create account -->
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+      <!-- Pop out menu with options -->
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <p> Logo Here </p>
+    </ion-title>
+  </ion-toolbar>
+<!-- Searchbar with cancel button shown on focus -->
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="8">
+          <ion-searchbar ></ion-searchbar>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button color="light">Filter Options</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  
+</ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true">
+  <!-- Item Dividers in a List -->
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>
+        Manhattan
+      </ion-label>
+      <!-- drop down of venue list -->
+      <ion-buttons slot="end">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+      </ion-buttons>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Venue 1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Venue 2</ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        Brooklyn
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+      </ion-buttons>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Venue 2</ion-label>
+    </ion-item>
+  
+  </ion-list>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
